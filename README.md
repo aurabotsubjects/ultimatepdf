@@ -18,8 +18,8 @@ Host it for free on GitHub Pages.
 
 1. Create a new GitHub repository (e.g. `ultimatepdf`).
 2. Upload **the contents of this folder** (everything including `index.html`, `css/`, `js/`, `lib/`, and the hidden `.nojekyll` file) to the repository root.
-   - Easiest on the web: *Add file → Upload files*, drag the contents in, commit.
-   - Note: GitHub's web upload accepts up to 100 files per drag; the `lib/pdfjs/cmaps` folder has ~170 small files, so upload it in two batches or use GitHub Desktop / `git push`.
+   - Easiest on the web: *Add file → Upload files*, then drag the folder's contents in (about 60 files in total, under GitHub's 100-file limit per upload) and commit.
+   - Keep the folder structure exactly as it is – in particular `lib/pdfjs/pdf.min.js` and `lib/pdfjs/pdf.worker.min.js` must stay inside `lib/pdfjs/`.
 3. In the repo go to **Settings → Pages**, set *Source* to **Deploy from a branch**, choose `main` and `/ (root)`, and Save.
 4. After a minute your app is live at `https://<your-username>.github.io/<repo-name>/`.
 
