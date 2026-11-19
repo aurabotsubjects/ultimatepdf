@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UltimatePDF — free private PDF toolkit</title>
+<meta name="description" content="Edit, sign, merge, split, convert and compress PDFs entirely in your browser. Nothing is uploaded.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home"><span class="logo">PDF</span><span><b>Ultimate</b>PDF<small>runs 100% in your browser</small></span></a>
+    <nav id="nav"></nav>
+    <div class="side-foot">🔒 Files never leave your device.</div>
+  </aside>
+  <main id="main">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </main>
+</div>
+<div id="toasts"></div>
+<div id="busy" hidden><div class="busy-card"><div class="spinner"></div><div id="busyMsg">Working…</div><div class="bar"><i id="busyBar"></i></div></div></div>
+
+<script src="lib/pdf-lib.min.js"></script>
+<script src="lib/pdfjs/pdf.min.js"></script>
+<script src="lib/jszip.min.js"></script>
+<script src="lib/mammoth.browser.min.js"></script>
+<script src="lib/html2canvas.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/pdfutil.js"></script>
+<script src="js/signature.js"></script>
+<script src="js/tools-organise.js"></script>
+<script src="js/htmlpdf.js"></script>
+<script src="js/tools-convert.js"></script>
+<script src="js/tools-optimise.js"></script>
+<script src="js/tools-stamp.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
